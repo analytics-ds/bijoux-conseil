@@ -190,23 +190,34 @@ Attention en editant les `.toml` : les nouvelles cles se mettent **avant** la ta
 `[articleCount]`, sinon TOML les range dedans et Hugo refuse de charger les
 traductions.
 
-### 6. Le logo : silhouette de femme au collier, plus le nom
+### 6. Le logo : embleme rond, silhouette de femme au collier
 
-Le logo associe une **silhouette pleine** de femme qui porte la main a son collier,
-en terracotta, et le nom en Cormorant Garamond majuscules, interlettrage 0.22em,
-souligne d'un filet terracotta. La marque fait 24 px de large dans le header.
+Le logo est un **embleme circulaire** : un anneau terracotta double d'une couronne
+de 24 perles, et a l'interieur une **silhouette pleine** de femme qui porte la main
+a son collier, pendentif vert. A cote, le nom en Cormorant Garamond majuscules,
+interlettrage 0.22em, souligne d'un filet terracotta. La marque fait 30 px dans le
+header. Au survol les deux couleurs s'inversent (corps vert, pendentif terracotta).
 
-Deux points a ne pas casser :
+Quatre points a ne pas casser :
 
-- **Le collier est decoupe au masque SVG**, pas peint en couleur de fond. C'est ce
-  qui permet a la marque de rester correcte sur le beige du header comme sur le vert
-  du favicon. Si un jour on la repeint en aplat, elle cassera sur fond colore.
+- **Le collier ET le bras sont decoupes au masque SVG**, pas peints en couleur de
+  fond. C'est ce qui permet a la marque de rester correcte sur le beige du header
+  comme sur le vert d'un fond colore. Si un jour on la repeint en aplat, elle
+  cassera sur fond colore.
+- **Le bras a besoin de sa reserve.** Sans le trait de separation entre le bras et
+  le torse (le second `stroke` noir du masque), le bras se fond dans l'epaule et la
+  main disparait : on ne voit plus qu'un buste. Constate le 2026-09-22 a 200 px.
 - **La silhouette est pleine, pas au trait.** Cinq versions au trait ont ete testees
   le 2026-09-22 : aucune ne reste lisible a 24 px, le bras leve se lit comme une
   deuxieme epaule. Le passage en aplat regle le probleme. Ne pas repasser au trait.
+- **Le favicon n'a pas l'anneau perle.** A 16 px les 24 perles bouillent. Il porte
+  un disque terracotta plein avec la silhouette en reserve creme. C'est volontaire,
+  ne pas y remettre l'embleme complet.
 
-Le meme dessin sert dans `static/favicon.svg` (sur carre vert) et
-`static/logo.svg` (marque plus nom).
+Le dessin de la silhouette est commun aux trois fichiers : le partial
+`header.html` (inline, bicolore pilote par le CSS), `static/logo.svg` (embleme
+couleur, sert aussi de `logo` dans le JSON-LD Organization) et
+`static/favicon.svg`.
 
 ### 7. Categories en illustration, articles en photo
 

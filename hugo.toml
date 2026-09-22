@@ -51,7 +51,7 @@ buildFuture = true
 [params]
   default_lang = "fr"
   default_og_image = "/images/og-default.svg"
-  logo = "/favicon.svg"
+  logo = "/logo.svg"
   founding_year = "2026"
   expertise = ["Bijoux", "Piercings", "Boucles d'oreilles", "Colliers", "Bagues"]
   og_locale_alternate = "en_US"

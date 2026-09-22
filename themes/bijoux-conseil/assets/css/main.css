@@ -1689,9 +1689,17 @@ h1, h2, h3, .hero h1, .article-title, .section-title {
 }
 
 .site-logo-mark svg {
-    width: 24px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     display: block;
+}
+
+.site-logo-mark .bc-gem {
+    transition: fill 0.18s ease;
+}
+
+.site-logo:hover .site-logo-mark .bc-gem {
+    fill: var(--accent);
 }
 
 .site-logo:hover .site-logo-mark {

@@ -96,7 +96,7 @@
     "name": "{{ .Site.Title }}",
     "url": "{{ .Site.BaseURL }}",
     "description": "{{ .Site.Params.description }}"{{ with .Site.Params.logo }},
-    "logo": "{{ . | absURL }}"{{ end }}{{ with .Site.Params.founding_year }},
+    "logo": "{{ strings.TrimPrefix "/" . | absURL }}"{{ end }}{{ with .Site.Params.founding_year }},
     "foundingDate": "{{ . }}"{{ end }}{{ with .Site.Params.expertise }},
     "knowsAbout": [{{ range $i, $e := . }}{{ if $i }}, {{ end }}"{{ $e }}"{{ end }}]{{ end }}
 }
