@@ -148,18 +148,34 @@ Attention en editant les `.toml` : les nouvelles cles se mettent **avant** la ta
 `[articleCount]`, sinon TOML les range dedans et Hugo refuse de charger les
 traductions.
 
-### 6. Les cartes de categorie portent une image
+### 6. Logo typographique, sans pictogramme
 
-Chaque `_index.md` de categorie a `image`, `imageAlt` et `imageCredit`, et les
-fichiers vivent dans `static/images/categories/`. Les 5 categories tiennent sur une
-ligne au-dessus de 1080 px.
+Le logo est le nom en Cormorant Garamond, majuscules, interlettrage 0.22em, avec un
+filet terracotta de 1 px dessous. **Pas de pictogramme**, choix arbitre le
+2026-09-22. Le favicon reprend les initiales BC sur fond vert. Ne pas reintroduire
+de losange, de diamant ou de gemme.
 
-**Toutes les images du site viennent d'Openverse**, filtrees sur les licences
-commercial + modification, via `.claude/scripts/fetch-image.sh`. Le premier resultat
-Openverse est souvent hors sujet ou filigrane : **toujours regarder l'image avant de
-la garder**. Sur ce site, 6 images ont du etre refaites (une radio de crane pour
-piercings, un origami pour idees cadeaux, un filigrane commercial sur un collier).
-Le credit de l'auteur est obligatoire, il est dans `imageCredit`.
+### 7. Categories en illustration, articles en photo
+
+Arbitrage du 2026-09-22, apres avoir constate que le fonds libre de droit rend un
+resultat date sur ce sujet.
+
+- **Les 5 cartes de categorie sont des illustrations maison** : SVG au trait,
+  terracotta `#C8734F` sur beige `#F4EBDC`, points verts `#3F5D4A`, stroke 3,
+  viewBox 400x300, dans `static/images/categories/`. Pas de credit, elles sont a
+  nous. Toute nouvelle categorie doit avoir son illustration dans ce style.
+- **Les articles portent des photos**, sauf les deux articles piercing, pour
+  lesquels le fonds libre n'offre rien d'exploitable : ils ont leur propre
+  illustration, dans le meme style, avec une variante EN pour celle qui porte du
+  texte (`ear-piercing-healing-time.svg`).
+- **Les photos viennent d'Openverse restreint a la source `rawpixel`**
+  (`&source=rawpixel` dans l'appel API), la seule qui donne des packshots modernes.
+  Sans ce filtre, on recupere du Flickr des annees 2000 et des photos de musee.
+- **Toujours regarder les images avant de les garder.** Le premier resultat est
+  souvent hors sujet : sur ce site, une radio de crane est sortie pour "piercings",
+  un oiseau pour "boucles d'oreilles en argent", un origami pour "idees cadeaux" et
+  un collier avec filigrane commercial. Le plus rapide est de telecharger une
+  dizaine de candidats et de les regarder en planche contact.
 
 ### 4. `robots.txt` et `llms.txt` sont generes par Hugo
 

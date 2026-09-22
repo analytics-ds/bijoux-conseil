@@ -8,8 +8,8 @@ categories: ["Rings"]
 tags: ["thin ring", "adjustable ring", "zirconia", "cubic zirconia", "sterling silver"]
 author: "magalie-ergoz"
 image: "/images/blog/bague-fine-ajustable-ou-zircon-comment-choisir.webp"
-imageAlt: "A silver ring set with a clear stone"
-imageCredit: "Photo par Gnilenkov Aleksey via Flickr (CC BY 2.0)"
+imageAlt: "Rings set with red stones"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "What is the difference between zirconia and diamond?"
     answer: "They are two distinct materials. Zircon is a natural mineral, while cubic zirconia is a colourless synthetic stone used in costume and silver jewellery. Diamond is crystallised carbon, rated 10 on the Mohs scale, while zirconia sits around 8: it therefore scratches faster in daily wear."

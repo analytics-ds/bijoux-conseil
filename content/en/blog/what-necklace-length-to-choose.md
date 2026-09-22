@@ -8,8 +8,8 @@ categories: ["Necklaces"]
 tags: ["necklace length", "choker", "opera necklace", "layering necklaces", "womens necklaces"]
 author: "magalie-ergoz"
 image: "/images/blog/quelle-longueur-de-collier-choisir.webp"
-imageAlt: "A necklace worn with the drop visible below the collarbone"
-imageCredit: "Photo par Unknown authorUnknown author via Wikimedia (CC BY 4.0)"
+imageAlt: "A statement necklace worn, drop visible on the bust"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "What necklace length should you choose?"
     answer: "The common conversion is as follows: 35 to 40 cm for a choker sitting at the base of the neck, 42 to 45 cm for a necklace falling just below the collarbone, 50 to 60 cm for a matinee reaching the sternum, and 70 cm and above for an opera length falling below the bust. These benchmarks assume an average neck circumference and shift if yours differs."

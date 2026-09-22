@@ -8,8 +8,8 @@ categories: ["Colliers"]
 tags: ["argent 925", "plaque or", "vermeil", "dorure", "entretien bijoux"]
 author: "magalie-ergoz"
 image: "/images/blog/collier-argent-925-ou-plaque-or.webp"
-imageAlt: "Chaine de collier doree posee a plat"
-imageCredit: "Photo par Miguel Vera via Flickr (CC BY 2.0)"
+imageAlt: "Chaine doree a pendentif circulaire posee a plat"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Quelle difference entre plaque or et dore ?"
     answer: "En France, l'appellation plaque or est encadree et suppose une couche d'or d'une epaisseur minimale de 3 microns deposee sur un metal support. Les mentions dore, flash dore ou metal dore ne garantissent aucune epaisseur et designent des depots beaucoup plus fins, qui s'usent en quelques mois de port quotidien."

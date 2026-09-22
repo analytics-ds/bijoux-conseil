@@ -8,8 +8,8 @@ categories: ["Boucles d'oreilles"]
 tags: ["argent 925", "argent sterling", "poincon", "allergie nickel", "entretien bijoux"]
 author: "magalie-ergoz"
 image: "/images/blog/boucles-doreilles-argent-925-ce-quil-faut-savoir.webp"
-imageAlt: "Paire de boucles d'oreilles en argent"
-imageCredit: "Photo par Naomi King via Flickr (CC BY 2.0)"
+imageAlt: "Paire de boucles d'oreilles en argent travaille"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Que veut dire argent 925 sur des boucles d'oreilles ?"
     answer: "L'argent 925, ou argent sterling, contient 92,5 % d'argent pur et 7,5 % d'autres metaux, le plus souvent du cuivre. L'argent pur a 99,9 % est trop mou pour tenir la forme d'un bijou, d'ou cet alliage. En France, 925 millièmes est le titre le plus courant pour les bijoux vendus sous l'appellation argent."

@@ -8,8 +8,8 @@ categories: ["Idees cadeaux"]
 tags: ["cadeau anniversaire", "bijou personnalise", "boucles d'oreilles", "collier", "budget cadeau"]
 author: "magalie-ergoz"
 image: "/images/blog/quel-bijou-offrir-pour-un-anniversaire.webp"
-imageAlt: "Bijou offert en cadeau, pose sur un tissu"
-imageCredit: "Photo par Jeff Belmonte via Flickr (CC BY 2.0)"
+imageAlt: "Joncs dores poses sur un fond de marbre"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Quel bijou offrir pour un anniversaire ?"
     answer: "Le choix depend surtout du lien avec la personne. Pour une amie ou une collegue, les boucles d'oreilles et le collier restent neutres et sans risque de taille. Pour un lien proche, la bague et le bracelet deviennent envisageables, a condition de connaitre la mesure. Le bijou grave ou personnalise se reserve aux relations proches, car il rend l'echange impossible."

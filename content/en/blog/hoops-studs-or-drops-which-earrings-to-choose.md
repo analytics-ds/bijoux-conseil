@@ -8,8 +8,8 @@ categories: ["Earrings"]
 tags: ["hoops", "stud earrings", "drop earrings", "sterling silver", "clasp"]
 author: "magalie-ergoz"
 image: "/images/blog/creoles-puces-ou-pendantes-quelles-boucles-doreilles-choisir.webp"
-imageAlt: "Gold hoop earrings laid out on a light background"
-imageCredit: "Photo par W.carter via Wikimedia (CC BY 4.0)"
+imageAlt: "A drop earring worn, seen in profile"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Which earrings should you choose when starting out?"
     answer: "A straight-post stud with a butterfly back remains the simplest choice: it usually weighs under one gram per ear, does not catch in the hair and suits a recently healed lobe. Small hoops, 10 to 15 mm, come next. Drop designs are best once the lobe is well established, because their weight pulls more on the piercing."

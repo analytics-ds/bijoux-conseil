@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="12" fill="#3F5D4A"/>
-  <g fill="none" stroke="#E8B99A" stroke-width="2.6" stroke-linejoin="round">
-    <path d="M22 16h20l10 14-20 26-20-26z"/>
-    <path d="M12 30h40M22 16 12 30l20 26 20-26-10-14"/>
-  </g>
+  <text x="32" y="38" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif"
+        font-size="27" font-weight="600" letter-spacing="1" fill="#FCF8F1">BC</text>
+  <rect x="18" y="45" width="28" height="1.8" fill="#C8734F"/>
 </svg>

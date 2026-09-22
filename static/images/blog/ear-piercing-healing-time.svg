@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img">
+  <rect width="600" height="400" fill="#F4EBDC"/>
+  <g transform="translate(120 55) scale(1.05)" fill="none" stroke="#C8734F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 60c-42 0-74 30-74 76 0 30 8 52 16 72 7 17 13 34 28 34 16 0 21-14 16-28-4-11-14-16-14-28 0-14 12-24 26-22 14 2 22-6 24-20 3-20 4-34 4-46 0-26-12-38-26-38z"/>
+    <path d="M222 108c-22 4-34 22-32 44 1 16 9 24 10 38"/>
+  </g>
+  <g fill="none" stroke="#3F5D4A" stroke-width="1.6" opacity="0.55">
+    <circle cx="330" cy="303" r="22"/>
+    <circle cx="330" cy="303" r="34"/>
+  </g>
+  <circle cx="330" cy="303" r="8" fill="#3F5D4A"/>
+  <g fill="none" stroke="#C8734F" stroke-width="2.6">
+    <circle cx="292" cy="122" r="10"/>
+  </g>
+  <g stroke="#3F5D4A" stroke-width="1.6" stroke-linecap="round">
+    <line x1="420" y1="140" x2="520" y2="140"/>
+    <line x1="420" y1="200" x2="520" y2="200"/>
+  </g>
+  <g fill="#3F5D4A" font-family="Jost, Helvetica, sans-serif">
+    <circle cx="420" cy="140" r="5"/><circle cx="452" cy="140" r="5"/>
+    <circle cx="420" cy="200" r="5"/><circle cx="520" cy="200" r="5"/>
+    <text x="420" y="124" font-size="14">Lobe</text>
+    <text x="420" y="184" font-size="14">Cartilage</text>
+    <text x="420" y="162" font-size="12" opacity="0.75">6 to 8 weeks</text>
+    <text x="420" y="222" font-size="12" opacity="0.75">6 to 12 months</text>
+  </g>
+</svg>

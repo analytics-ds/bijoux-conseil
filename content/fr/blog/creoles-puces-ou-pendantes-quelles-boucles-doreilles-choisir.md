@@ -8,8 +8,8 @@ categories: ["Boucles d'oreilles"]
 tags: ["creoles", "puces d'oreilles", "boucles pendantes", "argent 925", "fermoir"]
 author: "magalie-ergoz"
 image: "/images/blog/creoles-puces-ou-pendantes-quelles-boucles-doreilles-choisir.webp"
-imageAlt: "Creoles dorees posees sur un fond clair"
-imageCredit: "Photo par W.carter via Wikimedia (CC BY 4.0)"
+imageAlt: "Boucle d'oreille pendante portee, vue de profil"
+imageCredit: "Photo par Auteur inconnu via Rawpixel (CC CC0 1.0)"
 faq:
   - question: "Quelles boucles d'oreilles choisir quand on debute ?"
     answer: "Une puce a tige droite et fermoir poussette reste le choix le plus simple : elle pese generalement moins d'un gramme par oreille, ne s'accroche pas dans les cheveux et convient a un lobe recemment cicatrise. Les creoles de petit diametre, entre 10 et 15 mm, viennent ensuite. Les modeles pendants se portent une fois le lobe bien etabli, car leur poids tire davantage sur le percage."
