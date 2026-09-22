@@ -32,6 +32,21 @@ sitemapDescription = "Toutes les pages de"
 sitemapMainPages = "Pages principales"
 dateFormat = "2 January 2006"
 
+
+sizeGuidesTitle = "Les guides des tailles, en un coup d'oeil"
+sizeGuidesIntro = "Longueur de collier, taille de bague, diametre de creoles : les trois mesures ou l'erreur d'achat est la plus frequente, a l'echelle."
+sgNecklaceTitle = "Quelle longueur de collier"
+sgNecklaceAlt = "Silhouette montrant les quatre longueurs de collier et leur retombee"
+sgNecklaceLink = "Lire le guide des longueurs"
+sgRingTitle = "Quelle taille de bague"
+sgRingAlt = "Six tailles de bague dessinees a l'echelle, de la taille 48 a la taille 58"
+sgRingNote = "La taille francaise est le tour de doigt en millimetres. Entre une taille 48 et une taille 58, il n'y a que 3,2 mm de diametre : tout se joue au millimetre."
+sgRingLink = "Lire le guide des tailles de bague"
+sgHoopTitle = "Quel diametre de creoles"
+sgHoopAlt = "Trois diametres de creoles dessines a l'echelle : 12, 25 et 45 millimetres"
+sgHoopNote = "Le diametre change le rendu et le poids. Une creole fine de 12 mm pese souvent moins de 2 g la paire, un modele de 45 mm depasse facilement 8 g."
+sgHoopLink = "Lire le guide des boucles d'oreilles"
+
 [articleCount]
   one = "{{ .Count }} article"
   other = "{{ .Count }} articles"

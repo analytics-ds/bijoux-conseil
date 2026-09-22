@@ -15,13 +15,22 @@
         <div class="grid-categories">
             {{ range .Site.Taxonomies.categories }}
             <a href="{{ .Page.RelPermalink }}" class="category-card">
-                <h3>{{ .Page.Title }}</h3>
-                <span class="category-count">{{ i18n "articleCount" (dict "Count" .Count) }}</span>
+                {{ with .Page.Params.image }}
+                <span class="category-card-media">
+                    <img src="{{ . | relURL }}" alt="{{ $.Page.Params.imageAlt | default $.Page.Title }}" loading="lazy" width="400" height="260">
+                </span>
+                {{ end }}
+                <span class="category-card-body">
+                    <h3>{{ .Page.Title }}</h3>
+                    <span class="category-count">{{ i18n "articleCount" (dict "Count" .Count) }}</span>
+                </span>
             </a>
             {{ end }}
         </div>
     </div>
 </section>
+
+{{ partial "size-guides.html" . }}
 
 <section class="latest-section">
     <div class="container">

@@ -1,0 +1,87 @@
+{{- $en := eq .Site.Language.Lang "en" -}}
+<section class="size-guides">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "sizeGuidesTitle" }}</h2>
+    <p class="size-guides-intro">{{ i18n "sizeGuidesIntro" }}</p>
+
+    <div class="size-guides-grid">
+
+      <!-- 1. Longueurs de collier -->
+      <article class="size-guide">
+        <h3>{{ i18n "sgNecklaceTitle" }}</h3>
+        <div class="size-guide-body size-guide-body-split">
+          <svg class="sg-bust" viewBox="0 0 220 236" role="img" aria-label="{{ i18n "sgNecklaceAlt" }}">
+            <g fill="var(--background-alt)" stroke="var(--border)" stroke-width="1.2">
+              <path d="M36 236c0-78 34-120 74-120s74 42 74 120z"/>
+              <path d="M99 78h22v34H99z"/>
+              <ellipse cx="110" cy="50" rx="26" ry="30"/>
+            </g>
+            <g fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round">
+              <path d="M88 104q22 16 44 0"/>
+              <path d="M78 106q32 36 64 0"/>
+              <path d="M70 108q40 68 80 0"/>
+              <path d="M62 110q48 105 96 0"/>
+            </g>
+            <g fill="var(--accent)">
+              <circle cx="110" cy="112" r="2.6"/>
+              <circle cx="110" cy="124" r="2.6"/>
+              <circle cx="110" cy="142" r="2.6"/>
+              <circle cx="110" cy="163" r="3.4"/>
+            </g>
+            <g font-size="11.5" font-weight="600" font-family="Jost, sans-serif" fill="var(--accent)">
+              <text x="136" y="108">1</text>
+              <text x="147" y="110">2</text>
+              <text x="154" y="112">3</text>
+              <text x="162" y="114">4</text>
+            </g>
+          </svg>
+          <ol class="sg-legend">
+            <li><span class="sg-num">1</span><span class="sg-val">35-40 cm</span><span class="sg-lab">{{ if $en }}Choker, at the base of the neck{{ else }}Ras de cou, a la base du cou{{ end }}</span></li>
+            <li><span class="sg-num">2</span><span class="sg-val">42-45 cm</span><span class="sg-lab">{{ if $en }}Just below the collarbone{{ else }}Juste sous la clavicule{{ end }}</span></li>
+            <li><span class="sg-num">3</span><span class="sg-val">50-60 cm</span><span class="sg-lab">{{ if $en }}Matinee, at the sternum{{ else }}Mi-long, au sternum{{ end }}</span></li>
+            <li><span class="sg-num">4</span><span class="sg-val">70 cm +</span><span class="sg-lab">{{ if $en }}Opera, below the bust{{ else }}Sautoir, sous la poitrine{{ end }}</span></li>
+          </ol>
+        </div>
+        <a class="sg-link" href="{{ (cond $en "blog/what-necklace-length-to-choose/" "blog/quelle-longueur-de-collier-choisir/") | relLangURL }}">{{ i18n "sgNecklaceLink" }}</a>
+      </article>
+
+      <!-- 2. Tailles de bague -->
+      <article class="size-guide">
+        <h3>{{ i18n "sgRingTitle" }}</h3>
+        <div class="size-guide-body">
+          <svg class="sg-rings" viewBox="0 0 560 108" role="img" aria-label="{{ i18n "sgRingAlt" }}">
+            {{- $sizes := slice (dict "t" "48" "d" 15.3) (dict "t" "50" "d" 15.9) (dict "t" "52" "d" 16.6) (dict "t" "54" "d" 17.2) (dict "t" "56" "d" 17.8) (dict "t" "58" "d" 18.5) -}}
+            {{- range $i, $s := $sizes -}}
+            {{- $cx := add 50 (mul $i 92) -}}
+            {{- $r := mul $s.d 1.9 -}}
+            <circle cx="{{ $cx }}" cy="46" r="{{ $r }}" fill="none" stroke="var(--accent)" stroke-width="5.5"/>
+            <text x="{{ $cx }}" y="51" text-anchor="middle" font-size="15" font-weight="600" font-family="Jost, sans-serif" fill="currentColor">{{ $s.t }}</text>
+            <text x="{{ $cx }}" y="99" text-anchor="middle" font-size="11" font-family="Jost, sans-serif" fill="var(--text-light)">{{ $s.d }} mm</text>
+            {{- end -}}
+          </svg>
+        </div>
+        <p class="sg-note">{{ i18n "sgRingNote" }}</p>
+        <a class="sg-link" href="{{ (cond $en "blog/how-to-find-your-ring-size/" "blog/comment-connaitre-sa-taille-de-bague/") | relLangURL }}">{{ i18n "sgRingLink" }}</a>
+      </article>
+
+      <!-- 3. Diametre de creoles -->
+      <article class="size-guide">
+        <h3>{{ i18n "sgHoopTitle" }}</h3>
+        <div class="size-guide-body">
+          <svg class="sg-hoops" viewBox="0 0 420 160" role="img" aria-label="{{ i18n "sgHoopAlt" }}">
+            {{- $hoops := slice (dict "d" 12 "cx" 55 "lab" (cond $en "Daily wear" "Quotidien")) (dict "d" 25 "cx" 180 "lab" (cond $en "Everyday and going out" "Courant et sorties")) (dict "d" 45 "cx" 330 "lab" (cond $en "Statement" "Statement")) -}}
+            {{- range $hoops -}}
+            {{- $r := mul .d 1.25 -}}
+            <circle cx="{{ .cx }}" cy="60" r="{{ $r }}" fill="none" stroke="var(--accent)" stroke-width="3.5"/>
+            <text x="{{ .cx }}" y="137" text-anchor="middle" font-size="14" font-weight="600" font-family="Jost, sans-serif" fill="currentColor">{{ .d }} mm</text>
+            <text x="{{ .cx }}" y="153" text-anchor="middle" font-size="11" font-family="Jost, sans-serif" fill="var(--text-light)">{{ .lab }}</text>
+            {{- end -}}
+          </svg>
+        </div>
+        <p class="sg-note">{{ i18n "sgHoopNote" }}</p>
+        <a class="sg-link" href="{{ (cond $en "blog/hoops-studs-or-drops-which-earrings-to-choose/" "blog/creoles-puces-ou-pendantes-quelles-boucles-doreilles-choisir/") | relLangURL }}">{{ i18n "sgHoopLink" }}</a>
+      </article>
+
+    </div>
+  </div>
+</section>

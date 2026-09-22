@@ -88,7 +88,7 @@ Ce repo ne contient pas de site. Il contient les **instructions et templates** p
   creer un fichier `CNAME` a la racine contenant `bijoux-conseil.com`, configurer le
   DNS, puis mettre a jour `Site web/CONTEXTE.md` et `Site web/REFS.md`
 - **Repo GitHub** : https://github.com/analytics-ds/bijoux-conseil (public, branche `main`)
-- **Couleurs** : Primary `#2A2430` (prune profond), Primary-light `#453C4D`, Primary-dark `#17131C`, Accent et CTA `#B08D57` (or vieilli), CTA-hover `#96773F`, Background `#FFFDFA`, Background-alt `#F7F1E9`, Text `#2A2430`, Text-light `#6E6577`, Border `#E8DFD2`
+- **Couleurs** : palette terracotta, vert et beige. Primary `#3F5D4A` (vert profond), Primary-light `#55755F`, Primary-dark `#2C4234`, Accent et CTA `#C8734F` (terracotta), CTA-hover `#A95B39`, Background `#FCF8F1` (beige clair), Background-alt `#F1E7D8` (beige soutenu), Text `#2F3A32`, Text-light `#6C7A6F`, Border `#E2D6C2`
 - **Polices** : Cormorant Garamond (titres), Lora (corps), Jost (UI)
 - **Langue principale** : fr (version EN en sous-dossier `/en/`, toujours active)
 - **Categories (FR / EN)** :
@@ -136,6 +136,30 @@ Les layouts du template avaient les libelles en francais en dur, ce qui faisait
 apparaitre du francais sur les pages `/en/`. Tous les libelles sont desormais dans
 `i18n/fr.toml` et `i18n/en.toml`. **Ajouter une cle dans les deux fichiers** avant
 de l'utiliser dans un layout.
+
+### 5. La home porte un bloc "guides des tailles" en SVG
+
+`themes/bijoux-conseil/layouts/partials/size-guides.html`, insere entre les
+categories et les derniers articles. Trois mini-guides dessines **a l'echelle** en
+SVG inline : longueurs de collier sur une silhouette, six tailles de bague de 48 a
+58, trois diametres de creoles. Les valeurs sont celles des articles, donc **si un
+article change, mettre le bloc a jour**. Tous les textes passent par `i18n/`.
+Attention en editant les `.toml` : les nouvelles cles se mettent **avant** la table
+`[articleCount]`, sinon TOML les range dedans et Hugo refuse de charger les
+traductions.
+
+### 6. Les cartes de categorie portent une image
+
+Chaque `_index.md` de categorie a `image`, `imageAlt` et `imageCredit`, et les
+fichiers vivent dans `static/images/categories/`. Les 5 categories tiennent sur une
+ligne au-dessus de 1080 px.
+
+**Toutes les images du site viennent d'Openverse**, filtrees sur les licences
+commercial + modification, via `.claude/scripts/fetch-image.sh`. Le premier resultat
+Openverse est souvent hors sujet ou filigrane : **toujours regarder l'image avant de
+la garder**. Sur ce site, 6 images ont du etre refaites (une radio de crane pour
+piercings, un origami pour idees cadeaux, un filigrane commercial sur un collier).
+Le credit de l'auteur est obligatoire, il est dans `imageCredit`.
 
 ### 4. `robots.txt` et `llms.txt` sont generes par Hugo
 

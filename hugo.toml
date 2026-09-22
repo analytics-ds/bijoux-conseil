@@ -76,10 +76,6 @@ buildFuture = true
       description = "The jewellery and piercing guide: how to choose, compare and wear earrings, piercings, rings and necklaces."
 
 [[languages.fr.menus.main]]
-  name = "Accueil"
-  url = "/"
-  weight = 1
-[[languages.fr.menus.main]]
   name = "Boucles d'oreilles"
   url = "/categories/boucles-doreilles/"
   weight = 2
@@ -104,10 +100,6 @@ buildFuture = true
   url = "/blog/"
   weight = 99
 
-[[languages.en.menus.main]]
-  name = "Home"
-  url = "/en/"
-  weight = 1
 [[languages.en.menus.main]]
   name = "Earrings"
   url = "/en/categories/earrings/"

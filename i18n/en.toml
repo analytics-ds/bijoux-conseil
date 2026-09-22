@@ -32,6 +32,21 @@ sitemapDescription = "All pages of"
 sitemapMainPages = "Main pages"
 dateFormat = "January 2, 2006"
 
+
+sizeGuidesTitle = "Size guides, at a glance"
+sizeGuidesIntro = "Necklace length, ring size, hoop diameter: the three measurements where buying mistakes happen most, drawn to scale."
+sgNecklaceTitle = "Which necklace length"
+sgNecklaceAlt = "Silhouette showing the four necklace lengths and where each one falls"
+sgNecklaceLink = "Read the length guide"
+sgRingTitle = "Which ring size"
+sgRingAlt = "Six ring sizes drawn to scale, from size 48 to size 58"
+sgRingNote = "French sizing is the finger circumference in millimetres. Between a size 48 and a size 58 there is only 3.2 mm of diameter: it all comes down to the millimetre."
+sgRingLink = "Read the ring size guide"
+sgHoopTitle = "Which hoop diameter"
+sgHoopAlt = "Three hoop diameters drawn to scale: 12, 25 and 45 millimetres"
+sgHoopNote = "Diameter changes both the look and the weight. A thin 12 mm hoop often weighs under 2 g a pair, a 45 mm design easily exceeds 8 g."
+sgHoopLink = "Read the earrings guide"
+
 [articleCount]
   one = "{{ .Count }} article"
   other = "{{ .Count }} articles"

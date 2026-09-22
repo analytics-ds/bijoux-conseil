@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64">
-  <g fill="none" stroke="#B08D57" stroke-width="2.4" stroke-linejoin="round">
+  <g fill="none" stroke="#C8734F" stroke-width="2.4" stroke-linejoin="round">
     <path d="M18 14h20l10 14-20 26-20-26z"/>
     <path d="M8 28h40M18 14 8 28l20 26 20-26-10-14"/>
   </g>
-  <text x="64" y="41" font-family="Cormorant Garamond, Georgia, serif" font-size="30" font-weight="600" fill="#2A2430" letter-spacing="0.5">Bijoux Conseil</text>
+  <text x="64" y="41" font-family="Cormorant Garamond, Georgia, serif" font-size="30" font-weight="600" fill="#3F5D4A" letter-spacing="0.5">Bijoux Conseil</text>
 </svg>
