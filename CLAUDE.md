@@ -83,10 +83,8 @@ Ce repo ne contient pas de site. Il contient les **instructions et templates** p
 - **Description (FR)** : Le guide des bijoux et des piercings : comment choisir, comparer et porter boucles d'oreilles, piercings, bagues et colliers.
 - **Description (EN)** : The jewellery and piercing guide: how to choose, compare and wear earrings, piercings, rings and necklaces.
 - **URL actuelle** : https://analytics-ds.github.io/bijoux-conseil/
-- **Domaine prevu** : bijoux-conseil.com, **pas encore achete au 2026-09-22**. Une
-  fois achete : passer `baseURL` sur `https://bijoux-conseil.com/` dans `hugo.toml`,
-  creer un fichier `CNAME` a la racine contenant `bijoux-conseil.com`, configurer le
-  DNS, puis mettre a jour `Site web/CONTEXTE.md` et `Site web/REFS.md`
+- **Domaine prevu** : bijoux-conseil.com, **pas encore achete au 2026-09-22**. La
+  bascule est scriptee, voir la section "Brancher le domaine" plus bas
 - **Repo GitHub** : https://github.com/analytics-ds/bijoux-conseil (public, branche `main`)
 - **Couleurs** : palette terracotta, vert et beige. Primary `#3F5D4A` (vert profond), Primary-light `#55755F`, Primary-dark `#2C4234`, Accent et CTA `#C8734F` (terracotta), CTA-hover `#A95B39`, Background `#FCF8F1` (beige clair), Background-alt `#F1E7D8` (beige soutenu), Text `#2F3A32`, Text-light `#6C7A6F`, Border `#E2D6C2`
 - **Polices** : Cormorant Garamond (titres), Lora (corps), Jost (UI)
@@ -107,6 +105,50 @@ Ce repo ne contient pas de site. Il contient les **instructions et templates** p
 - **YMYL** : non, mais les articles piercings touchent a la sante. Ils decrivent des
   pratiques courantes et des ordres de grandeur, et renvoient systematiquement a un
   professionnel de sante ou a un perceur qualifie. Ne jamais formuler de conseil medical
+
+## Brancher le domaine, le jour ou il est achete
+
+Tout est pret pour la bascule. Elle prend deux minutes cote technique, le reste est
+de l'attente de propagation DNS.
+
+### 1. Chez le registrar (a faire a la main, je n'y ai pas acces)
+
+Pour un domaine racine, GitHub Pages demande quatre enregistrements **A** :
+
+```
+@   A   185.199.108.153
+@   A   185.199.109.153
+@   A   185.199.110.153
+@   A   185.199.111.153
+```
+
+Plus, pour que `www` marche aussi :
+
+```
+www CNAME   analytics-ds.github.io.
+```
+
+Compter de 10 minutes a quelques heures de propagation.
+
+### 2. Lancer le script
+
+```bash
+cd "Site web/bijoux-conseil"
+./scripts/connect-domain.sh bijoux-conseil.com
+```
+
+Il verifie les DNS, passe le `baseURL`, cree le `CNAME`, rebuild, commit, push,
+declare le domaine cote GitHub Pages, attend le certificat puis force le HTTPS.
+Il est idempotent, on peut le relancer.
+
+`robots.txt`, `llms.txt`, le sitemap et les balises canoniques suivent
+automatiquement, ils sont tous derives du `baseURL`.
+
+### 3. Apres la bascule
+
+- Mettre a jour `Site web/CONTEXTE.md` et `Site web/REFS.md`, colonne domaine
+- Declarer le site dans la Search Console et pousser le sitemap
+- Verifier que l'ancienne URL `analytics-ds.github.io/bijoux-conseil/` redirige bien
 
 ## Specificites techniques de ce site
 
