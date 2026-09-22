@@ -7,6 +7,9 @@ description: "Les longueurs de collier en centimetres, ou chaque modele tombe re
 categories: ["Colliers"]
 tags: ["longueur collier", "ras de cou", "sautoir", "superposition colliers", "collier femme"]
 author: "magalie-ergoz"
+image: "/images/blog/quelle-longueur-de-collier-choisir.webp"
+imageAlt: "Collier porte, retombee visible sous la clavicule"
+imageCredit: "Photo par Unknown authorUnknown author via Wikimedia (CC BY 4.0)"
 faq:
   - question: "Quelle longueur de collier choisir ?"
     answer: "La correspondance courante est la suivante : 35 a 40 cm pour un ras de cou qui epouse la base du cou, 42 a 45 cm pour un collier qui tombe juste sous la clavicule, 50 a 60 cm pour un mi-long qui arrive au niveau du sternum, et 70 cm et plus pour un sautoir qui descend sous la poitrine. Ces reperes valent pour un tour de cou moyen et se decalent si le tour de cou s'en eloigne."

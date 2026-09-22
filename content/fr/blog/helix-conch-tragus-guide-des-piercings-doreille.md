@@ -7,6 +7,9 @@ description: "Helix, conch, tragus, daith, lobe : emplacements, bijoux adaptes e
 categories: ["Piercings"]
 tags: ["helix", "conch", "tragus", "daith", "piercing cartilage"]
 author: "magalie-ergoz"
+image: "/images/blog/helix-conch-tragus-guide-des-piercings-doreille.webp"
+imageAlt: "Oreille portant plusieurs piercings de cartilage"
+imageCredit: "Photo par hannah.rosen via Flickr (CC BY 2.0)"
 faq:
   - question: "Quels sont les differents piercings d'oreille ?"
     answer: "L'oreille se divise en deux zones. Le lobe, souple et charnu, accueille le lobe simple, le deuxieme et le troisieme trou. Le cartilage, rigide, accueille l'helix sur le bord externe, le flat sur la partie plate haute, le conch dans la cavite centrale, le tragus sur le petit volet devant le conduit, l'anti-tragus en face, le daith dans le pli interne, le rook sur le pli superieur et le snug sur la crete interne."

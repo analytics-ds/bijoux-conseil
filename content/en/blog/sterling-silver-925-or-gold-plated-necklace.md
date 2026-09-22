@@ -7,6 +7,9 @@ description: "Sterling silver, gold plating, vermeil, gilding: what each term ac
 categories: ["Necklaces"]
 tags: ["sterling silver", "gold plated", "vermeil", "gilding", "jewellery care"]
 author: "magalie-ergoz"
+image: "/images/blog/collier-argent-925-ou-plaque-or.webp"
+imageAlt: "A gold necklace chain laid flat"
+imageCredit: "Photo par Miguel Vera via Flickr (CC BY 2.0)"
 faq:
   - question: "What is the difference between gold plated and gilded?"
     answer: "In France, the term gold plated is regulated and implies a gold layer at least 3 microns thick deposited on a support metal. The terms gilded, flash plated or gold coloured guarantee no thickness and describe far thinner deposits, which wear away within months of daily wear."

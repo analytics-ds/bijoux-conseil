@@ -7,6 +7,9 @@ description: "Bague fine, bague ajustable ou bague sertie de zircon : ce que cha
 categories: ["Bagues"]
 tags: ["bague fine", "bague ajustable", "zircon", "oxyde de zirconium", "argent 925"]
 author: "magalie-ergoz"
+image: "/images/blog/bague-fine-ajustable-ou-zircon-comment-choisir.webp"
+imageAlt: "Bague en argent sertie d'une pierre claire"
+imageCredit: "Photo par Gnilenkov Aleksey via Flickr (CC BY 2.0)"
 faq:
   - question: "Quelle difference entre un zircon et un diamant ?"
     answer: "Ce sont deux materiaux distincts. Le zircon est un mineral naturel, et l'oxyde de zirconium, souvent appele zircone, est une pierre de synthese incolore utilisee en bijouterie fantaisie et en argent. Le diamant est du carbone cristallise, note 10 sur l'echelle de Mohs, quand la zircone se situe autour de 8 : elle se raye donc plus vite a l'usage quotidien."

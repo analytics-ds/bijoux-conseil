@@ -7,6 +7,9 @@ description: "Helix, conch, tragus, daith, lobe: placements, suitable jewellery 
 categories: ["Piercings"]
 tags: ["helix", "conch", "tragus", "daith", "cartilage piercing"]
 author: "magalie-ergoz"
+image: "/images/blog/helix-conch-tragus-guide-des-piercings-doreille.webp"
+imageAlt: "An ear with several cartilage piercings"
+imageCredit: "Photo par hannah.rosen via Flickr (CC BY 2.0)"
 faq:
   - question: "What are the different ear piercings?"
     answer: "The ear splits into two zones. The lobe, soft and fleshy, takes the standard lobe piercing plus second and third holes. The cartilage, rigid, takes the helix on the outer rim, the flat on the upper flat surface, the conch in the central hollow, the tragus on the small flap in front of the ear canal, the anti-tragus opposite it, the daith in the inner fold, the rook on the upper ridge and the snug on the inner ridge."

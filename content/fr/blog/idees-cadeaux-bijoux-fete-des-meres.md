@@ -7,6 +7,9 @@ description: "Offrir un bijou pour la fete des meres sans connaitre la taille : 
 categories: ["Idees cadeaux"]
 tags: ["fete des meres", "cadeau bijou", "bague ajustable", "collier", "idee cadeau femme"]
 author: "magalie-ergoz"
+image: "/images/blog/idees-cadeaux-bijoux-fete-des-meres.webp"
+imageAlt: "Bijoux presentes dans un ecrin cadeau"
+imageCredit: "Photo par Moheen Reeyad via Wikimedia (CC BY-SA 4.0)"
 faq:
   - question: "Quel bijou offrir pour la fete des meres sans connaitre la taille ?"
     answer: "Trois formats ne demandent aucune mesure : le collier, dont la longueur se rattrape avec une chainette d'extension, les boucles d'oreilles, qui n'ont pas de taille, et la bague ajustable, qui absorbe une a deux tailles d'ecart. La bague fixe et le bracelet jonc rigide sont les deux formats ou l'erreur de taille est la plus frequente."

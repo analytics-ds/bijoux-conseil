@@ -7,6 +7,9 @@ description: "Lobe, helix, conch, tragus: commonly cited healing times, the stag
 categories: ["Piercings"]
 tags: ["healing", "ear piercing", "helix", "piercing aftercare", "saline solution"]
 author: "magalie-ergoz"
+image: "/images/blog/temps-de-cicatrisation-piercing-oreille.webp"
+imageAlt: "Close-up of a pierced ear during healing"
+imageCredit: "Photo par crossfirecw via Flickr (CC BY 2.0)"
 faq:
   - question: "How long does an ear piercing take to heal?"
     answer: "It depends on the tissue pierced. For a lobe, professionals in the field commonly cite six to eight weeks. For a cartilage piercing such as a helix, conch or tragus, the range moves to six to twelve months, and longer for thick placements like the rook or the daith. Cartilage has far less blood supply, which slows repair."

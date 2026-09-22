@@ -7,6 +7,9 @@ description: "Giving jewellery for Mother's Day without knowing the size: the ri
 categories: ["Gift Ideas"]
 tags: ["mothers day", "jewellery gift", "adjustable ring", "necklace", "gift ideas for her"]
 author: "magalie-ergoz"
+image: "/images/blog/idees-cadeaux-bijoux-fete-des-meres.webp"
+imageAlt: "Jewellery presented in a gift box"
+imageCredit: "Photo par Moheen Reeyad via Wikimedia (CC BY-SA 4.0)"
 faq:
   - question: "What jewellery can you give for Mother's Day without knowing the size?"
     answer: "Three formats need no measurement: the necklace, whose length is corrected with an extender chain, earrings, which have no size, and the adjustable ring, which absorbs one to two sizes. Fixed rings and rigid bangles are the two formats where sizing mistakes happen most."

@@ -7,6 +7,9 @@ description: "Mesurer sa taille de bague chez soi : methode du fil, methode de l
 categories: ["Bagues"]
 tags: ["taille de bague", "tour de doigt", "bague ajustable", "guide des tailles", "bague femme"]
 author: "magalie-ergoz"
+image: "/images/blog/comment-connaitre-sa-taille-de-bague.webp"
+imageAlt: "Bagues alignees pour comparer les tailles"
+imageCredit: "Photo par firemedic58 via Flickr (CC BY 2.0)"
 faq:
   - question: "Comment connaitre sa taille de bague ?"
     answer: "En France, la taille de bague correspond a la circonference interieure exprimee en millimetres : une taille 52 correspond a un tour de doigt de 52 mm. Deux methodes existent chez soi. Entourer le doigt d'un fil non elastique, marquer le point de recouvrement et mesurer la longueur obtenue a la regle. Ou mesurer le diametre interieur d'une bague qui va deja, et le multiplier par 3,14."

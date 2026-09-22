@@ -7,6 +7,9 @@ description: "Measuring your ring size at home: the string method, the reference
 categories: ["Rings"]
 tags: ["ring size", "finger size", "adjustable ring", "size guide", "womens rings"]
 author: "magalie-ergoz"
+image: "/images/blog/comment-connaitre-sa-taille-de-bague.webp"
+imageAlt: "Rings lined up to compare sizes"
+imageCredit: "Photo par firemedic58 via Flickr (CC BY 2.0)"
 faq:
   - question: "How do you find your ring size?"
     answer: "In France, ring size equals the inner circumference in millimetres: a size 52 corresponds to a 52 mm finger circumference. Two methods work at home. Wrap the finger with a non-elastic string, mark the overlap point and measure the length with a ruler. Or measure the inner diameter of a ring that already fits and multiply it by 3.14."

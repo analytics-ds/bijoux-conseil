@@ -7,6 +7,9 @@ description: "Lobe, helix, conch, tragus : les durees de cicatrisation courammen
 categories: ["Piercings"]
 tags: ["cicatrisation", "piercing oreille", "helix", "entretien piercing", "serum physiologique"]
 author: "magalie-ergoz"
+image: "/images/blog/temps-de-cicatrisation-piercing-oreille.webp"
+imageAlt: "Gros plan sur une oreille percee en cours de cicatrisation"
+imageCredit: "Photo par crossfirecw via Flickr (CC BY 2.0)"
 faq:
   - question: "Combien de temps met un piercing d'oreille a cicatriser ?"
     answer: "Tout depend du tissu perce. Pour un lobe, les professionnels du secteur citent couramment six a huit semaines. Pour un piercing de cartilage comme l'helix, le conch ou le tragus, l'ordre de grandeur passe a six a douze mois, et davantage pour les emplacements epais comme le rook ou le daith. Le cartilage est moins vascularise, ce qui ralentit la reparation."

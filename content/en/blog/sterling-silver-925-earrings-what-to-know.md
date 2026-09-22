@@ -7,6 +7,9 @@ description: "Sterling silver 925, hallmarks, tarnishing, allergies: the concret
 categories: ["Earrings"]
 tags: ["sterling silver", "925 silver", "hallmark", "nickel allergy", "jewellery care"]
 author: "magalie-ergoz"
+image: "/images/blog/boucles-doreilles-argent-925-ce-quil-faut-savoir.webp"
+imageAlt: "A pair of silver earrings"
+imageCredit: "Photo par Naomi King via Flickr (CC BY 2.0)"
 faq:
   - question: "What does 925 mean on earrings?"
     answer: "Silver 925, or sterling silver, contains 92.5% pure silver and 7.5% other metals, most often copper. Pure silver at 99.9% is too soft to hold a jewellery shape, hence the alloy. In France, 925 parts per thousand is the most common fineness for pieces sold as silver."

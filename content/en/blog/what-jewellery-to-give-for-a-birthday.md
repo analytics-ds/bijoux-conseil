@@ -7,6 +7,9 @@ description: "Choosing birthday jewellery by relationship, budget and the style 
 categories: ["Gift Ideas"]
 tags: ["birthday gift", "personalised jewellery", "earrings", "necklace", "gift budget"]
 author: "magalie-ergoz"
+image: "/images/blog/quel-bijou-offrir-pour-un-anniversaire.webp"
+imageAlt: "A piece of jewellery given as a gift, resting on fabric"
+imageCredit: "Photo par Jeff Belmonte via Flickr (CC BY 2.0)"
 faq:
   - question: "What jewellery should you give for a birthday?"
     answer: "The choice depends mostly on the relationship. For a friend or a colleague, earrings and a necklace stay neutral and carry no sizing risk. For a close relationship, rings and bracelets become viable, provided the measurement is known. Engraved or personalised pieces are best kept for close relationships, since they make an exchange impossible."

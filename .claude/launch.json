@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "bijoux-conseil",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": [
+        "server",
+        "--source",
+        "/Users/manonlamache/Library/CloudStorage/GoogleDrive-manon.lamache@datashake.fr/.shortcut-targets-by-id/1i_julKCeosWb2XGFlM91QXPo9jGIIWkd/🐸 Froggies/seo-claude-manonlam/Site web/bijoux-conseil",
+        "--port",
+        "1313",
+        "--disableFastRender",
+        "--baseURL",
+        "http://localhost:1313/",
+        "--appendPort=false"
+      ],
+      "port": 1313
+    }
+  ]
+}
