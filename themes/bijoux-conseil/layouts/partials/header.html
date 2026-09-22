@@ -1,0 +1,85 @@
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ "" | relLangURL }}" class="site-logo" aria-label="{{ .Site.Title }}">
+            <span class="site-logo-mark" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                    <path d="M10 4h12l6 8-12 16L4 12z"/>
+                    <path d="M4 12h24M10 4l-6 8 12 16 12-16-6-8"/>
+                </svg>
+            </span>
+            <span class="site-logo-text">{{ .Site.Title }}</span>
+        </a>
+
+        <nav class="site-nav" aria-label="{{ i18n "navMain" }}">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL | relURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">
+                {{ .Name }}
+            </a>
+            {{ end }}
+        </nav>
+
+        {{ if gt (len .Site.Languages) 1 }}
+        <div class="lang-switcher" aria-label="{{ i18n "langSwitcher" }}">
+            {{ $currentLang := .Site.Language.Lang }}
+            {{ range .Site.Languages }}
+            {{ $lang := . }}
+            {{ if eq $lang.Lang $currentLang }}
+            <span class="lang-current" aria-current="true">{{ upper $lang.Lang }}</span>
+            {{ else }}
+            {{ $target := "" }}
+            {{ range $.Translations }}
+                {{ if eq .Lang $lang.Lang }}{{ $target = .RelPermalink }}{{ end }}
+            {{ end }}
+            {{ if not $target }}
+                {{ $target = cond (eq $lang.Lang "en") ("en/" | relURL) ("/" | relURL) }}
+            {{ end }}
+            <a href="{{ $target }}" class="lang-link" hreflang="{{ $lang.Lang }}">{{ upper $lang.Lang }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+
+    <nav class="nav-mobile" aria-label="{{ i18n "navMobile" }}">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}" class="nav-link-mobile">{{ .Name }}</a>
+        {{ end }}
+        {{ if gt (len .Site.Languages) 1 }}
+        <div class="lang-switcher-mobile">
+            {{ $currentLangM := .Site.Language.Lang }}
+            {{ range .Site.Languages }}
+            {{ $lang := . }}
+            {{ if eq $lang.Lang $currentLangM }}
+            <span class="lang-current" aria-current="true">{{ upper $lang.Lang }}</span>
+            {{ else }}
+            {{ $target := "" }}
+            {{ range $.Translations }}
+                {{ if eq .Lang $lang.Lang }}{{ $target = .RelPermalink }}{{ end }}
+            {{ end }}
+            {{ if not $target }}
+                {{ $target = cond (eq $lang.Lang "en") ("en/" | relURL) ("/" | relURL) }}
+            {{ end }}
+            <a href="{{ $target }}" class="lang-link" hreflang="{{ $lang.Lang }}">{{ upper $lang.Lang }}</a>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+    </nav>
+</header>
+
+<script>
+(function() {
+    var toggle = document.querySelector('.menu-toggle');
+    var mobileNav = document.querySelector('.nav-mobile');
+    if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+            var isOpen = mobileNav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    }
+})();
+</script>

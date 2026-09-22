@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#FFFDFA"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#B08D57"/>
+  <g transform="translate(600 190)" fill="none" stroke="#B08D57" stroke-width="4" stroke-linejoin="round">
+    <path d="M-30 -48h60l30 42-60 78-60-78z"/>
+    <path d="M-60 -6h120M-30 -48l-30 42 60 78 60-78-30-42"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="76" font-weight="600" fill="#2A2430">Bijoux Conseil</text>
+  <text x="600" y="462" text-anchor="middle" font-family="Jost, Helvetica, sans-serif" font-size="27" fill="#6E6577">Guides et comparatifs bijoux et piercings</text>
+  <text x="600" y="556" text-anchor="middle" font-family="Jost, Helvetica, sans-serif" font-size="19" letter-spacing="4" fill="#B08D57">BOUCLES D'OREILLES &#183; PIERCINGS &#183; BAGUES &#183; COLLIERS</text>
+</svg>

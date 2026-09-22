@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sophie Martin">
+  <defs>
+    <linearGradient id="smBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="smSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD6B8"/>
+      <stop offset="1" stop-color="#F5B894"/>
+    </linearGradient>
+    <linearGradient id="smHair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6B3A2E"/>
+      <stop offset="1" stop-color="#4A2618"/>
+    </linearGradient>
+    <linearGradient id="smShirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#smBg)"/>
+  <g transform="translate(256,256)">
+    <circle r="240" fill="#F1F5F9" opacity="0.08"/>
+  </g>
+  <g transform="translate(0,30)">
+    <ellipse cx="256" cy="220" rx="88" ry="100" fill="url(#smSkin)"/>
+    <path d="M168 180 C168 120, 220 80, 256 82 C296 82, 346 118, 344 184 C344 200, 340 210, 336 218 C332 204, 324 196, 314 194 C310 170, 302 156, 290 150 C284 170, 272 180, 260 184 C246 180, 232 172, 222 156 C208 168, 196 188, 192 216 C182 218, 174 228, 170 238 C166 228, 166 210, 168 180 Z" fill="url(#smHair)"/>
+    <ellipse cx="232" cy="220" rx="6" ry="8" fill="#1E293B"/>
+    <ellipse cx="280" cy="220" rx="6" ry="8" fill="#1E293B"/>
+    <path d="M228 220 Q224 214 220 218" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M276 220 Q280 214 284 218" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M236 262 Q256 272 276 262" stroke="#C94A6B" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <ellipse cx="256" cy="248" rx="4" ry="2" fill="#E5A589" opacity="0.7"/>
+    <circle cx="212" cy="240" r="8" fill="#F5B894" opacity="0.5"/>
+    <circle cx="300" cy="240" r="8" fill="#F5B894" opacity="0.5"/>
+    <path d="M120 410 C120 360, 180 330, 256 330 C332 330, 392 360, 392 410 L392 512 L120 512 Z" fill="url(#smShirt)"/>
+    <path d="M224 345 L256 370 L288 345 L288 390 L224 390 Z" fill="#F8FAFC" opacity="0.95"/>
+    <circle cx="256" cy="378" r="4" fill="#F59E0B"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">{{ if eq .Site.Language.Lang "en" }}Jewellery and piercing guide{{ else }}Le guide bijoux et piercings{{ end }}</span>
+        <h1>{{ if eq .Site.Language.Lang "en" }}Choose the right jewellery, without the guesswork{{ else }}Choisir ses bijoux sans se tromper{{ end }}</h1>
+        <p class="hero-description">{{ .Site.Params.description }}</p>
+        <a href="{{ (cond (eq .Site.Language.Lang "en") "/en/blog/" "/blog/") | relLangURL }}" class="btn-primary">{{ i18n "heroCta" }}</a>
+    </div>
+</section>
+
+<section class="categories-section">
+    <div class="container">
+        <h2 class="section-title">{{ i18n "sectionCategories" }}</h2>
+        <div class="grid-categories">
+            {{ range .Site.Taxonomies.categories }}
+            <a href="{{ .Page.RelPermalink }}" class="category-card">
+                <h3>{{ .Page.Title }}</h3>
+                <span class="category-count">{{ i18n "articleCount" (dict "Count" .Count) }}</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="latest-section">
+    <div class="container">
+        <h2 class="section-title">{{ i18n "sectionLatest" }}</h2>
+        <div class="grid-articles">
+            {{ range first 6 (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+            <article class="article-card">
+                <a href="{{ .RelPermalink }}" class="article-card-image-wrapper" aria-label="{{ .Title }}">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt | default .Title }}" class="article-card-image" loading="lazy" width="600" height="400">
+                    {{ else }}
+                    <span class="article-card-image article-card-image-placeholder" aria-hidden="true">{{ slicestr .Title 0 1 }}</span>
+                    {{ end }}
+                </a>
+                <div class="article-card-body">
+                    <div class="article-meta">
+                        {{ with .Params.categories }}
+                        <span class="article-category">{{ index . 0 }}</span>
+                        {{ end }}
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (i18n "dateFormat") }}</time>
+                    </div>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description }}</p>
+                    <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "readMore" }}</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

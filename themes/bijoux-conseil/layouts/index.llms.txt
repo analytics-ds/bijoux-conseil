@@ -1,0 +1,30 @@
+{{- $isEN := eq .Site.Language.Lang "en" -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }}
+
+## {{ if $isEN }}About{{ else }}A propos{{ end }}
+
+{{ if $isEN -}}
+Bijoux Conseil is an independent outlet covering jewellery and piercings. It publishes buying guides and comparisons on earrings, ear piercings, rings, necklaces and jewellery gift ideas. Standards quoted (silver fineness, gold plating thickness, nickel release limits) refer to official texts. The site gives no medical advice.
+{{- else -}}
+Bijoux Conseil est un media independant consacre aux bijoux et aux piercings. Il publie des guides d'achat et des comparatifs sur les boucles d'oreilles, les piercings d'oreille, les bagues, les colliers et les idees cadeaux. Les normes citees (titre de l'argent, epaisseur du plaquage or, limites de liberation de nickel) renvoient a des textes officiels. Le site ne donne aucun conseil medical.
+{{- end }}
+
+## {{ if $isEN }}Main sections{{ else }}Contenu principal{{ end }}
+{{ range .Site.Taxonomies.categories }}
+- [{{ .Page.Title }}]({{ .Page.Permalink }}) : {{ .Page.Description }}
+{{- end }}
+
+## {{ if $isEN }}Articles{{ else }}Articles{{ end }}
+{{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}) : {{ .Description }}
+{{- end }}
+
+## {{ if $isEN }}Technical information{{ else }}Informations techniques{{ end }}
+
+- {{ if $isEN }}Generator{{ else }}Generateur{{ end }} : Hugo
+- {{ if $isEN }}Hosting{{ else }}Hebergement{{ end }} : GitHub Pages
+- {{ if $isEN }}Languages{{ else }}Langues{{ end }} : {{ range $i, $l := .Site.Languages }}{{ if $i }}, {{ end }}{{ $l.Lang }}{{ end }}
+- Sitemap : {{ "sitemap.xml" | absURL }}
+- RSS : {{ "index.xml" | absURL }}
