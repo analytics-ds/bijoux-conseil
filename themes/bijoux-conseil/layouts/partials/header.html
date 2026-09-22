@@ -1,6 +1,23 @@
 <header class="site-header">
     <div class="header-container">
         <a href="{{ "" | relLangURL }}" class="site-logo" aria-label="{{ .Site.Title }}">
+            <span class="site-logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="bc-logo-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="56">
+    <rect width="48" height="56" fill="#000"/>
+    <g fill="#fff">
+      <circle cx="24" cy="13" r="8.6"/>
+      <path d="M20 19h8v10h-8z"/>
+      <path d="M3 52c0-13 7-25 21-25s21 12 21 25z"/>
+      <path d="M44 52 39.4 36.5c-.7-2.3-2.2-3.9-4.3-4.9l-6-2.9-2.5 4.9 5.4 2.7c1.3.7 2.1 1.7 2.5 3.1L38.8 52z"/>
+      <circle cx="27.8" cy="31.4" r="4.7"/>
+    </g>
+    <path d="M13.6 32.4C15.8 41.4 19.4 46 24 46s8.2-4.6 10.4-13.6" fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="24" cy="46.4" r="2.8" fill="#fff"/>
+  </mask>
+                  <rect width="48" height="56" fill="currentColor" mask="url(#bc-logo-mask)"/>
+                </svg>
+            </span>
             <span class="site-logo-text">{{ .Site.Title }}</span>
         </a>
 

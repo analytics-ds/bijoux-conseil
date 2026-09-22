@@ -148,12 +148,23 @@ Attention en editant les `.toml` : les nouvelles cles se mettent **avant** la ta
 `[articleCount]`, sinon TOML les range dedans et Hugo refuse de charger les
 traductions.
 
-### 6. Logo typographique, sans pictogramme
+### 6. Le logo : silhouette de femme au collier, plus le nom
 
-Le logo est le nom en Cormorant Garamond, majuscules, interlettrage 0.22em, avec un
-filet terracotta de 1 px dessous. **Pas de pictogramme**, choix arbitre le
-2026-09-22. Le favicon reprend les initiales BC sur fond vert. Ne pas reintroduire
-de losange, de diamant ou de gemme.
+Le logo associe une **silhouette pleine** de femme qui porte la main a son collier,
+en terracotta, et le nom en Cormorant Garamond majuscules, interlettrage 0.22em,
+souligne d'un filet terracotta. La marque fait 24 px de large dans le header.
+
+Deux points a ne pas casser :
+
+- **Le collier est decoupe au masque SVG**, pas peint en couleur de fond. C'est ce
+  qui permet a la marque de rester correcte sur le beige du header comme sur le vert
+  du favicon. Si un jour on la repeint en aplat, elle cassera sur fond colore.
+- **La silhouette est pleine, pas au trait.** Cinq versions au trait ont ete testees
+  le 2026-09-22 : aucune ne reste lisible a 24 px, le bras leve se lit comme une
+  deuxieme epaule. Le passage en aplat regle le probleme. Ne pas repasser au trait.
+
+Le meme dessin sert dans `static/favicon.svg` (sur carre vert) et
+`static/logo.svg` (marque plus nom).
 
 ### 7. Categories en illustration, articles en photo
 

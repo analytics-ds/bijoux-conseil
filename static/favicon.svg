@@ -1,6 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="12" fill="#3F5D4A"/>
-  <text x="32" y="38" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif"
-        font-size="27" font-weight="600" letter-spacing="1" fill="#FCF8F1">BC</text>
-  <rect x="18" y="45" width="28" height="1.8" fill="#C8734F"/>
+  <svg x="10" y="6" width="44" height="52" viewBox="0 0 48 56">
+    <mask id="bc-fav-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="56">
+    <rect width="48" height="56" fill="#000"/>
+    <g fill="#fff">
+      <circle cx="24" cy="13" r="8.6"/>
+      <path d="M20 19h8v10h-8z"/>
+      <path d="M3 52c0-13 7-25 21-25s21 12 21 25z"/>
+      <path d="M44 52 39.4 36.5c-.7-2.3-2.2-3.9-4.3-4.9l-6-2.9-2.5 4.9 5.4 2.7c1.3.7 2.1 1.7 2.5 3.1L38.8 52z"/>
+      <circle cx="27.8" cy="31.4" r="4.7"/>
+    </g>
+    <path d="M13.6 32.4C15.8 41.4 19.4 46 24 46s8.2-4.6 10.4-13.6" fill="none" stroke="#000" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="24" cy="46.4" r="2.8" fill="#fff"/>
+  </mask>
+    <rect width="48" height="56" fill="#FCF8F1" mask="url(#bc-fav-mask)"/>
+  </svg>
 </svg>
