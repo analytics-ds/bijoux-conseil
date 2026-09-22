@@ -54,7 +54,7 @@
                     {{ with $authorData }}
                     <div class="author-info">
                         {{ with .avatar }}
-                        <img src="{{ . | relURL }}" alt="{{ $authorData.name }}" class="author-avatar" width="48" height="48" loading="lazy">
+                        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $authorData.name }}" class="author-avatar" width="48" height="48" loading="lazy">
                         {{ else }}
                         <div class="author-avatar author-avatar-placeholder" aria-hidden="true">{{ slicestr .name 0 1 }}</div>
                         {{ end }}
@@ -83,7 +83,7 @@
 
             {{ with .Params.image }}
             <div class="article-hero-image">
-                <img src="{{ . | relURL }}" alt="{{ with $.Params.imageAlt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}" width="600" height="400" loading="eager" fetchpriority="high">
+                <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ with $.Params.imageAlt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}" width="600" height="400" loading="eager" fetchpriority="high">
                 {{ with $.Params.imageCredit }}
                 <small class="article-hero-image-credit">{{ . }}</small>
                 {{ end }}
@@ -120,7 +120,7 @@
                 {{ with $authorData }}
                 <aside class="author-box" aria-label="{{ i18n "authorAbout" }}">
                     {{ with .avatar }}
-                    <img src="{{ . | relURL }}" alt="{{ $authorData.name }}" class="author-box-avatar" width="96" height="96" loading="lazy">
+                    <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $authorData.name }}" class="author-box-avatar" width="96" height="96" loading="lazy">
                     {{ else }}
                     <div class="author-box-avatar author-avatar-placeholder" aria-hidden="true">{{ slicestr .name 0 1 }}</div>
                     {{ end }}
