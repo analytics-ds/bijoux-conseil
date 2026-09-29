@@ -44,10 +44,10 @@ articles:
     volume: 36800
     kd: null
     scheduled_date: "2026-09-29"
-    status: todo
-    published_date: null
-    published_url_fr: null
-    published_url_en: null
+    status: done
+    published_date: "2026-09-29"
+    published_url_fr: "https://bijoux-conseil.com/blog/piercing-nez/"
+    published_url_en: "https://bijoux-conseil.com/en/blog/nose-piercing/"
     error: null
 
   - kw: "noces de mariage"

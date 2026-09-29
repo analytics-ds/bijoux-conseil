@@ -22,3 +22,7 @@ Ils ne comptent pas dans le quota hebdomadaire. Tous existent en FR et en EN.
 ## Semaine du 2026-09-21 au 2026-09-27
 
 Aucune publication hors seeding.
+
+## Semaine du 2026-09-28 au 2026-10-04
+
+- 2026-09-29 | Piercing nez : types, matières, prix (FR+EN) | Piercings | auto | mode: datafer | score: 78/64
