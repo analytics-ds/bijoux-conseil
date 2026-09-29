@@ -1,10 +1,8 @@
 # Bijoux Conseil - configuration Hugo
-# Domaine prevu : bijoux-conseil.com (PAS ENCORE ACHETE au 2026-09-22).
-# Tant qu'il n'est pas achete et connecte, le site vit sur GitHub Pages.
-# Une fois le domaine achete : passer baseURL sur "https://bijoux-conseil.com/"
-# et creer le fichier CNAME a la racine avec "bijoux-conseil.com".
+# Domaine : bijoux-conseil.com, branche le 2026-09-29 (DNS GoDaddy, custom domain Pages, HTTPS force).
+# static/CNAME porte le domaine : ne pas le retirer, sinon Pages efface le custom domain.
 
-baseURL = "https://analytics-ds.github.io/bijoux-conseil/"
+baseURL = "https://bijoux-conseil.com/"
 title = "Bijoux Conseil"
 theme = "bijoux-conseil"
 
