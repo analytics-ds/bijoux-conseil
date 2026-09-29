@@ -1,0 +1,612 @@
+# Roadmap editoriale evergreen — Bijoux Conseil (bijoux-conseil)
+#
+# Blog : https://analytics-ds.github.io/bijoux-conseil/ (bascule prevue sur https://bijoux-conseil.com/)
+# Client relaye : Pohesia (pohesia.com)
+# Langue principale : fr (content/fr) + EN (content/en)
+# Cadence : 2 articles par semaine, mardi et vendredi, sur 6 mois
+#   (52 articles, du 2026-10-02 au 2027-03-30)
+#
+# Categories disponibles (orthographe exacte, doit matcher le frontmatter du site) :
+#   - Boucles d'oreilles
+#   - Piercings
+#   - Bagues
+#   - Colliers
+#   - Idees cadeaux
+#
+# FONCTIONNEMENT
+# --------------
+# L'agent prend la premiere entree avec status: todo et scheduled_date <= today,
+# triee par scheduled_date croissante. Il genere l'article FR + EN et push sur
+# main. GitHub Actions deploie. En cas d'echec, status passe a failed et error
+# est rempli. Une entree failed n'est jamais retentee automatiquement.
+#
+# AJOUT D'UNE ENTREE
+# ------------------
+# Copier un bloc, remplir kw / category / scheduled_date, laisser les autres
+# champs tels quels. volume et kd sont informatifs, ignores par l'agent.
+#
+# CHOIX DES MOTS-CLES (2026-09-29)
+# --------------------------------
+# Mots-cles informationnels uniquement, volumes Haloscan FR (septembre 2026).
+# Exclus volontairement :
+#   - les 10 sujets du seeding (taille de bague, longueur de collier, cicatrisation
+#     piercing oreille, guide helix/conch/tragus, argent 925, plaque or, creoles...) ;
+#   - les 74 mots-cles de la roadmap informationnelle du blog Pohesia (douleur,
+#     signification, bienfaits et cicatrisation par emplacement, piercing infecte,
+#     cheloide, allergie nickel, tendances), pour ne pas concurrencer le client ;
+#   - les tetes helix, conch et tragus, deja couvertes par le guide du seeding.
+# Saisonnalite : idee cadeau femme debut novembre (Noel), cadeau saint valentin
+# fin decembre (indexation avant le 14 fevrier).
+
+articles:
+  - kw: "piercing nez"
+    category: "Piercings"
+    volume: 36800
+    kd: null
+    scheduled_date: "2026-10-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "noces de mariage"
+    category: "Idees cadeaux"
+    volume: 30100
+    kd: null
+    scheduled_date: "2026-10-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "saphir"
+    category: "Bagues"
+    volume: 30100
+    kd: null
+    scheduled_date: "2026-10-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "améthyste"
+    category: "Colliers"
+    volume: 36800
+    kd: null
+    scheduled_date: "2026-10-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "ear cuff"
+    category: "Boucles d'oreilles"
+    volume: 9900
+    kd: null
+    scheduled_date: "2026-10-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing daith"
+    category: "Piercings"
+    volume: 10400
+    kd: null
+    scheduled_date: "2026-10-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bague de promesse"
+    category: "Bagues"
+    volume: 15100
+    kd: null
+    scheduled_date: "2026-10-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "lapis lazuli"
+    category: "Colliers"
+    volume: 20800
+    kd: null
+    scheduled_date: "2026-10-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing snug"
+    category: "Piercings"
+    volume: 6000
+    kd: null
+    scheduled_date: "2026-10-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "idée cadeau femme"
+    category: "Idees cadeaux"
+    volume: 3700
+    kd: null
+    scheduled_date: "2026-11-03"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "topaze"
+    category: "Bagues"
+    volume: 21800
+    kd: null
+    scheduled_date: "2026-11-06"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "vermeil"
+    category: "Colliers"
+    volume: 13455
+    kd: null
+    scheduled_date: "2026-11-10"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "boucle d'oreille mariage"
+    category: "Boucles d'oreilles"
+    volume: 4000
+    kd: null
+    scheduled_date: "2026-11-13"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing anti helix"
+    category: "Piercings"
+    volume: 5100
+    kd: null
+    scheduled_date: "2026-11-17"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "rubis"
+    category: "Bagues"
+    volume: 13600
+    kd: null
+    scheduled_date: "2026-11-20"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "labradorite"
+    category: "Colliers"
+    volume: 18100
+    kd: null
+    scheduled_date: "2026-11-24"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing septum"
+    category: "Piercings"
+    volume: 5000
+    kd: null
+    scheduled_date: "2026-11-27"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "cadeau naissance maman"
+    category: "Idees cadeaux"
+    volume: 1700
+    kd: null
+    scheduled_date: "2026-12-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "pierre de lune"
+    category: "Colliers"
+    volume: 13100
+    kd: null
+    scheduled_date: "2026-12-04"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "prix piercing oreille"
+    category: "Piercings"
+    volume: 4909
+    kd: null
+    scheduled_date: "2026-12-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bague de fiançailles"
+    category: "Bagues"
+    volume: 3800
+    kd: null
+    scheduled_date: "2026-12-11"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "pendentif"
+    category: "Colliers"
+    volume: 8500
+    kd: null
+    scheduled_date: "2026-12-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "boucle d'oreille chaîne"
+    category: "Boucles d'oreilles"
+    volume: 3667
+    kd: null
+    scheduled_date: "2026-12-18"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing flat"
+    category: "Piercings"
+    volume: 4700
+    kd: null
+    scheduled_date: "2026-12-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "main de fatma"
+    category: "Colliers"
+    volume: 8500
+    kd: null
+    scheduled_date: "2026-12-25"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "cadeau saint valentin"
+    category: "Idees cadeaux"
+    volume: 22600
+    kd: null
+    scheduled_date: "2026-12-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "aigue marine"
+    category: "Colliers"
+    volume: 10647
+    kd: null
+    scheduled_date: "2027-01-01"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing industriel"
+    category: "Piercings"
+    volume: 3700
+    kd: null
+    scheduled_date: "2027-01-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "signification bague au doigt"
+    category: "Bagues"
+    volume: 2400
+    kd: null
+    scheduled_date: "2027-01-08"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "quartz rose"
+    category: "Colliers"
+    volume: 8500
+    kd: null
+    scheduled_date: "2027-01-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "oxyde de zirconium"
+    category: "Boucles d'oreilles"
+    volume: 4000
+    kd: null
+    scheduled_date: "2027-01-15"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing nombril"
+    category: "Piercings"
+    volume: 3400
+    kd: null
+    scheduled_date: "2027-01-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "chevalière femme"
+    category: "Bagues"
+    volume: 2900
+    kd: null
+    scheduled_date: "2027-01-22"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "pierre de naissance"
+    category: "Idees cadeaux"
+    volume: 700
+    kd: null
+    scheduled_date: "2027-01-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "nacre"
+    category: "Colliers"
+    volume: 6700
+    kd: null
+    scheduled_date: "2027-01-29"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing titane"
+    category: "Piercings"
+    volume: 3300
+    kd: null
+    scheduled_date: "2027-02-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "émeraude"
+    category: "Bagues"
+    volume: 3009
+    kd: null
+    scheduled_date: "2027-02-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "percer les oreilles"
+    category: "Boucles d'oreilles"
+    volume: 1727
+    kd: null
+    scheduled_date: "2027-02-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing medusa"
+    category: "Piercings"
+    volume: 2900
+    kd: null
+    scheduled_date: "2027-02-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "chaîne de cheville"
+    category: "Colliers"
+    volume: 2800
+    kd: null
+    scheduled_date: "2027-02-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bague au pouce"
+    category: "Bagues"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-02-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing labret"
+    category: "Piercings"
+    volume: 2800
+    kd: null
+    scheduled_date: "2027-02-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "acier inoxydable bijoux"
+    category: "Colliers"
+    volume: 2417
+    kd: null
+    scheduled_date: "2027-02-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing bouche"
+    category: "Piercings"
+    volume: 2000
+    kd: null
+    scheduled_date: "2027-03-02"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bague toi et moi"
+    category: "Bagues"
+    volume: 1800
+    kd: null
+    scheduled_date: "2027-03-05"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing joue"
+    category: "Piercings"
+    volume: 1900
+    kd: null
+    scheduled_date: "2027-03-09"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "argent rhodié"
+    category: "Colliers"
+    volume: 1500
+    kd: null
+    scheduled_date: "2027-03-12"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "faux piercing"
+    category: "Piercings"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-16"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "bague phalange"
+    category: "Bagues"
+    volume: 1300
+    kd: null
+    scheduled_date: "2027-03-19"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing lobe"
+    category: "Piercings"
+    volume: 1600
+    kd: null
+    scheduled_date: "2027-03-23"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "piercing arcade"
+    category: "Piercings"
+    volume: 1500
+    kd: null
+    scheduled_date: "2027-03-26"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
+
+  - kw: "cicatrisation piercing nombril"
+    category: "Piercings"
+    volume: 1400
+    kd: null
+    scheduled_date: "2027-03-30"
+    status: todo
+    published_date: null
+    published_url_fr: null
+    published_url_en: null
+    error: null
