@@ -32,7 +32,7 @@
                     <a href="{{ (printf "categories/%s/" (index . 0 | urlize)) | relLangURL }}" class="article-category">{{ index . 0 }}</a>
                     {{ end }}
                     <span class="meta-separator">&middot;</span>
-                    <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (i18n "dateFormat") }}</time>
+                    <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format (i18n "dateFormat") .Date }}</time>
                     <span class="meta-separator">&middot;</span>
                     <span class="article-reading-time">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -69,7 +69,7 @@
                     {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
                     <div class="article-updated">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
-                        {{ i18n "updatedOn" }} {{ .Lastmod.Format (i18n "dateFormat") }}
+                        {{ i18n "updatedOn" }} {{ time.Format (i18n "dateFormat") .Lastmod }}
                     </div>
                     {{ end }}
                 </div>

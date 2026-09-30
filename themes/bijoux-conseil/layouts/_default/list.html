@@ -25,7 +25,7 @@
                         {{ with .Params.categories }}
                         <span class="article-category">{{ index . 0 }}</span>
                         {{ end }}
-                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (i18n "dateFormat") }}</time>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format (i18n "dateFormat") .Date }}</time>
                         <span class="reading-time">{{ .ReadingTime }} {{ i18n "readingTime" }}</span>
                     </div>
                     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
