@@ -241,6 +241,15 @@ resultat date sur ce sujet.
   un collier avec filigrane commercial. Le plus rapide est de telecharger une
   dizaine de candidats et de les regarder en planche contact.
 
+### 8. Le sommaire est une liste non numerotee (`ordered = false`)
+
+Le template livrait `ordered = true` dans `[markup.tableOfContents]`, ce qui fait
+generer un `<ol>` par Hugo alors que le CSS du theme ne stylise que `.toc nav ul`.
+Resultat constate le 2026-09-30 : numeros rognes par la bordure gauche, police de
+l'article au lieu de Jost 12 px, et doubles numeros (« 3. 1. Pohesia ») sur les
+classements dont les H2 sont numerotes. Passe a `ordered = false`. Ne pas remettre
+`true` sans ajouter les selecteurs `ol` dans le CSS.
+
 ### 4. `robots.txt` et `llms.txt` sont generes par Hugo
 
 Ils ne sont pas dans `static/`. `robots.txt` vient de
